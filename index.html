@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cinzel', serif;
+      background-color: rgb(28, 27, 27);
+      background-image: url(./assets/background.jpg);
+    }
+
+    /* Hint: What can you do with a media query and flexbox? */
+   
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      gap: 3rem;
+    }
+
+    .pricing-plan-1 {
+      flex: 1;
+      box-shadow: 10px 10px black;
+      max-width: 300px;
+      padding: 20px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      background-color: #89d4ef;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .pricing-plan-1:hover {
+      background-color: rgb(148, 52, 52);
+      color:antiquewhite
+    }
+
+    .pricing-plan-2 {
+      flex: 1;
+      box-shadow: 10px 10px black;
+      max-width: 300px;
+      padding: 20px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      background-color: #89efab;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .pricing-plan-2:hover {
+      background-color: rgb(148, 52, 52);
+      color:antiquewhite
+    }
+
+    .pricing-plan-3 {
+      flex: 1;
+      box-shadow: 10px 10px black;
+      max-width: 300px;
+      padding: 20px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      background-color: #ef8989;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .pricing-plan-3:hover {
+      background-color: rgb(148, 52, 52);
+      color:antiquewhite
+    }
+
+    .plan-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+
+    .plan-price {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 35px;
+    }
+
+    .plan-features li {
+      margin-bottom: 45px;
+    }
+
+    .plan-button {
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 2px 2px black;
+      background-color: #23157b;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .plan-button:hover {
+      background-color: seagreen;
+      box-shadow: none;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1250px) {
+      .pricing-container {
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .pricing-plan-1 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      min-width: 356.55px;
+    }
+    .pricing-plan-2 {
+      margin-top: 0;
+      margin-bottom: 30px;
+      min-width: 356.55px;
+    }
+    .pricing-plan-3 {
+      margin-top: 0;
+      margin-bottom: 30px;
+      min-width: 356.55px;
+    }
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan-1">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan-2">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan-3">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
